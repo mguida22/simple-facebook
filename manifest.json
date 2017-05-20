@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "Simple Facebook",
+  "version": "0.1.0",
+  "description": "No bullshit Facebook",
+  "content_scripts": [{
+    "matches": ["*://www.facebook.com/*"],
+    "js": ["simple-facebook.js"],
+    "run_at": "document_end"
+  }]
+}
